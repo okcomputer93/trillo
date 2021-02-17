@@ -211,6 +211,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
+    .user-nav__notification--info {
+      display: none; }
+  .user-nav__icon-box:hover .user-nav__notification--info {
+    display: inline-block;
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(-20%);
+    width: 100px;
+    padding: 1rem;
+    background-color: var(--color-grey-light-2);
+    border-radius: 15rem;
+    text-align: center;
+    font-weight: 600; }
   .user-nav__user-photo {
     height: 3.75rem;
     border-radius: 50%;
