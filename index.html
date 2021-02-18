@@ -37,15 +37,54 @@
               <use xlink:href="img/sprite.svg#icon-bookmark"></use>
             </svg>
             <span class="user-nav__notification">7</span>
-            <span class="user-nav__notification--info">Bookmarks</span>
+            <span class="dropdown__info">Bookmarks</span>
           </div>
 
-          <div class="user-nav__icon-box">
+          <div class="user-nav__icon-box user-nav__icon-box--chat">
             <svg class="user-nav__icon">
               <use xlink:href="img/sprite.svg#icon-chat"></use>
             </svg>
             <span class="user-nav__notification">13</span>
-            <span class="user-nav__notification--info">Chat</span>
+            <div class="dropdown">
+              <div class="dropdown__chat">
+                <div class="dropdown__message">
+                  <img
+                    class="dropdown__message-user-photo"
+                    src="img/user-1.jpg"
+                    alt="User"
+                  />
+                  <div class="dropdown__message-content">
+                    <p class="dropdown__message-user-name">Nick Smith</p>
+                    <p class="dropdown__message-text">Has sent a message</p>
+                  </div>
+                </div>
+                <div class="dropdown__message">
+                  <img
+                    class="dropdown__message-user-photo"
+                    src="img/user-2.jpg"
+                    alt="User"
+                  />
+                  <div class="dropdown__message-content">
+                    <p class="dropdown__message-user-name">Mary Thomas</p>
+                    <p class="dropdown__message-text">Has sent a message</p>
+                  </div>
+                </div>
+                <div class="dropdown__message">
+                  <img
+                    class="dropdown__message-user-photo"
+                    src="img/user-3.jpg"
+                    alt="User"
+                  />
+                  <div class="dropdown__message-content">
+                    <p class="dropdown__message-user-name">Jon Doe</p>
+                    <p class="dropdown__message-text">Has sent a message</p>
+                  </div>
+                </div>
+                <a class="dropdown__message-see-all" href="#"
+                  >See All Messages</a
+                >
+              </div>
+            </div>
           </div>
           <div class="user-nav__user">
             <img
