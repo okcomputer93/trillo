@@ -408,9 +408,38 @@ body {
 
 .gallery {
   display: flex; }
+  .gallery__item {
+    position: relative; }
   .gallery__photo {
     width: 100%;
-    display: block; }
+    display: block;
+    cursor: pointer; }
+    .gallery__photo:hover {
+      filter: blur(0.1rem); }
+  .gallery__photo:hover ~ .gallery__caption {
+    opacity: 1;
+    visibility: visible;
+    height: 25%; }
+  .gallery__caption {
+    visibility: hidden;
+    position: absolute;
+    padding: 1rem;
+    background-color: var(--color-primary);
+    width: 100%;
+    transform: translate(0, -100%);
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: #fff;
+    opacity: 0;
+    height: 0;
+    transition: all 0.4s;
+    cursor: pointer; }
+    .gallery__caption:hover {
+      opacity: 1;
+      visibility: visible;
+      height: 25%; }
 
 .overview {
   display: flex;
