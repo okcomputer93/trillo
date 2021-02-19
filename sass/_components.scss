@@ -404,6 +404,10 @@
     opacity: 1;
     visibility: visible;
     height: 25%;
+
+    @media only screen and (max-width: $bp-smallest) {
+      height: 30%;
+    }
   }
 
   &__caption {
@@ -422,6 +426,11 @@
     height: 0;
     transition: all 0.4s;
     cursor: pointer;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1rem;
+      font-weight: 600;
+    }
 
     &:hover {
       opacity: 1;

@@ -31,23 +31,23 @@
               </svg>
             </button>
             <div class="input__predictions">
-            <ul class="input__predictions-box">
-              <li class="input__predictions-list">
-                <a class="input__predictions-item" href="#">hotels near me</a>
-              </li>
-              <li class="input__predictions-list">
-                <a class="input__predictions-item" href="#">hotels tonight</a>
-              </li>
-              <li class="input__predictions-list">
-                <a class="input__predictions-item" href="#">hotels prices</a>
-              </li>
-              <li class="input__predictions-list">
-                <a class="input__predictions-item" href="#">sales</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+              <ul class="input__predictions-box">
+                <li class="input__predictions-list">
+                  <a class="input__predictions-item" href="#">hotels near me</a>
+                </li>
+                <li class="input__predictions-list">
+                  <a class="input__predictions-item" href="#">hotels tonight</a>
+                </li>
+                <li class="input__predictions-list">
+                  <a class="input__predictions-item" href="#">hotels prices</a>
+                </li>
+                <li class="input__predictions-list">
+                  <a class="input__predictions-item" href="#">sales</a>
+                </li>
+              </ul>
+            </div>
           </form>
+        </div>
 
         <nav class="user-nav">
           <div class="user-nav__icon-box">
@@ -164,25 +164,33 @@
           <div class="gallery">
             <figure class="gallery__item">
               <img
-                src="img/hotel-1.jpg"
+                srcset="img/hotel-1-small.jpg 900w, img/hotel-1.jpg 1500w"
+                sizes="(max-width: 600px) 900px, (max-width: 1200px) 1500px, 1500px"
                 alt="Photo of hotel"
                 class="gallery__photo"
+                src="img/hotel-1.jpg"
               />
-              <figcaption class="gallery__caption">Your holidays here!</figcaption>
+              <figcaption class="gallery__caption">
+                Your holidays here!
+              </figcaption>
             </figure>
             <figure class="gallery__item">
               <img
-                src="img/hotel-2.jpg"
+                srcset="img/hotel-2-small.jpg 900w, img/hotel-2.jpg 1500w"
+                sizes="(max-width: 600px) 900px, (max-width: 1200px) 1500px, 1500px"
                 alt="Photo of hotel"
                 class="gallery__photo"
+                src="img/hotel-2.jpg"
               />
               <figcaption class="gallery__caption">Incredible views</figcaption>
             </figure>
             <figure class="gallery__item">
               <img
-                src="img/hotel-3.jpg"
+                srcset="img/hotel-3-small.jpg 900w, img/hotel-3.jpg 1500w"
+                sizes="(max-width: 37.5em) 900px, (max-width: 75em) 1500px, 1500px"
                 alt="Photo of hotel"
                 class="gallery__photo"
+                src="img/hotel-3.jpg"
               />
               <figcaption class="gallery__caption">Book now!</figcaption>
             </figure>

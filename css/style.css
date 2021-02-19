@@ -420,6 +420,9 @@ body {
     opacity: 1;
     visibility: visible;
     height: 25%; }
+    @media only screen and (max-width: 31.25em) {
+      .gallery__photo:hover ~ .gallery__caption {
+        height: 30%; } }
   .gallery__caption {
     visibility: hidden;
     position: absolute;
@@ -436,6 +439,10 @@ body {
     height: 0;
     transition: all 0.4s;
     cursor: pointer; }
+    @media only screen and (max-width: 37.5em) {
+      .gallery__caption {
+        font-size: 1rem;
+        font-weight: 600; } }
     .gallery__caption:hover {
       opacity: 1;
       visibility: visible;
